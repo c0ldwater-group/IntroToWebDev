@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <section class="navbar">
+        <figure>
+            <img src="../assets/bakery-logo_c.png"
+            alt="North Star Bakery Logo"
+            width="100"
+            height="100">
+        </figure>
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </section>
+
+    <h1>Contact Us</h1>
+    <div class="container">
+        <h2>Use the form below to ask questions, send in preorder inquiries, or order your goods in advance!</h2>
+        <br>
+        <p>Our location at 123 Example St in downtown Exampletown is open 8 AM to 6 PM Monday through Friday.</p>
+
+        <form action="/contact" method="post">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Message</legend>
+                <label for="pickupDate">Pickup Date:</label>
+                <input type="date" id="pickupDate" name="pickupDate" required>
+                <br>
+                <label for="reqType">Request Type:</label>
+                <select id="reqType" name="reqType">
+                <option value="">-- Select an inquiry type --</option>
+                <option value="preorder">Preorder</option>
+                <option value="genQuestion">General Question</option>
+                </select>
+                <br>
+                <label for="itemDetails">Item Details or Question:</label>
+                <textarea id="bio" name="bio" rows="4" cols="50">Enter your message here...</textarea>
+                <br>
+                <label for="allergies">Allergy Information (If Applicable):</label>
+                <input type="text" id="allergies" name="allergies">
+            </fieldset>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    
+    <footer>
+        <nav aria-label="Footer">
+            <p>Hours: 8 AM to 6 PM Monday-Friday, closed on weekends</p>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

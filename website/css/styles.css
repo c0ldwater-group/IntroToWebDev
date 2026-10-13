@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: beige;
+}
+
+.banner {
+    display: block;
+    width: 80%;
+    padding: 1.2rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    color: brown;
+    margin-top: 1rem;
+}
+
+h2 {
+    text-align: left;
+    font-weight: bold;
+    color: rgba(165, 42, 42, 0.687);
+}
+
+.navbar a {
+    display: inline-block;
+    width: 10rem;
+    height: 3rem;
+    background-color: burlywood;
+    text-align: center;
+    line-height: 3rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    color: black;
+}   
+
+.nav-links {
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .nav-links {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+.btn {
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: burlywood;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: rgba(222, 184, 135, 0.777);
+}
