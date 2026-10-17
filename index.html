@@ -47,7 +47,11 @@
         <h2>Check Out Our Bake of the Week!</h2>
         <picture>
             <source srcset="assets/bakery-feature-large_c.png" media="(min-width: 800px)">
-            <img src="assets/bakery-feature-small_c.png" alt="A wooden shelf containing an assortment of baked goods.">
+            <img src="assets/bakery-feature-small_c.png" alt="A wooden shelf containing an assortment of baked goods."
+            style="transition: transform 0.2s ease;"
+            onmouseover="this.style.transform='scale(1.1)'"
+            onmouseout="this.style.transform='scale(1.0)'"
+        >
         </picture>
     </div>
     
@@ -60,5 +64,6 @@
             </ul>
         </nav>
     </footer>
+
 </body>
 </html>

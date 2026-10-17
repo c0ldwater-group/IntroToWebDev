@@ -28,7 +28,7 @@
         <br>
         <p>Our location at 123 Example St in downtown Exampletown is open 8 AM to 6 PM Monday through Friday.</p>
 
-        <form action="/contact" method="post">
+        <form id="contactForm" action="/contact" method="post">
             <fieldset>
                 <legend>Contact Information</legend>
                 <label for="name">Full Name:</label>
@@ -51,13 +51,15 @@
                 </select>
                 <br>
                 <label for="itemDetails">Item Details or Question:</label>
-                <textarea id="bio" name="bio" rows="4" cols="50">Enter your message here...</textarea>
+                <textarea id="itemDetails" name="itemDetails" rows="4" cols="50">Enter your message here...</textarea>
                 <br>
                 <label for="allergies">Allergy Information (If Applicable):</label>
                 <input type="text" id="allergies" name="allergies">
             </fieldset>
             <button type="submit">Send Message</button>
         </form>
+
+        <script src="../js/script.js"></script>
     </div>
     
     <footer>
